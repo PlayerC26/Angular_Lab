@@ -1,0 +1,14 @@
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &__tittle {
+        margin: 1em;
+        color: white;
+        font-family: 'Poppins';
+        font-style: normal;
+        font-size: 48px;
+        line-height: 72px;
+    }
+}

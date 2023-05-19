@@ -3,7 +3,6 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { IndexComponent } from './page/index/index.component';
 import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { NavComponent } from './components/nav/nav.component';
@@ -19,7 +18,6 @@ import { AgeMinComponent } from './components/age-min/age-min.component';
 @NgModule({
   declarations: [
     AppComponent,
-    IndexComponent,
     HeaderComponent,
     FooterComponent,
     NavComponent,

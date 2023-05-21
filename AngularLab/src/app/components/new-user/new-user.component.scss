@@ -1,0 +1,33 @@
+.new_user{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1em;
+}
+
+h2{
+    color: white;
+    margin-left: 1em;
+}
+    button {
+        width: 150px;
+        height: 38px;
+        color: white;
+        background-color: #443C68;
+        border: none;
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+        border-radius: 6px;
+        margin-right: 5em;
+        margin-top: 1em;
+
+        &:hover{
+            background-color: #413b5b;
+        }
+
+    }
+    
+.register{
+    position: fixed;
+    left: 500px;
+    top: -20px
+}
+

@@ -5,7 +5,6 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
-import { NavComponent } from './components/nav/nav.component';
 import { TableComponent } from './components/table/table.component';
 import { NewUserComponent } from './components/new-user/new-user.component';
 import { RegisterComponent } from './components/register/register.component';
@@ -20,7 +19,6 @@ import { AgeMinComponent } from './components/age-min/age-min.component';
     AppComponent,
     HeaderComponent,
     FooterComponent,
-    NavComponent,
     TableComponent,
     NewUserComponent,
     RegisterComponent,

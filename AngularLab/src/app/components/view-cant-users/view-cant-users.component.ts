@@ -7,4 +7,8 @@ import { Component } from '@angular/core';
 })
 export class ViewCantUsersComponent {
 
+
+  menCant = 0;
+  mayCant = 0;
+
 }

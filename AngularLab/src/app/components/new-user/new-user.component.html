@@ -1,1 +1,9 @@
-<p>new-user works!</p>
+
+<section class="new_user">
+    <h2>lista de usuarios</h2>
+    <button class="btn_NewUser" (click)="openModal()">Agregar Usuario</button>
+</section>
+
+<section class="register" *ngIf="swithModal==true">
+    <app-register></app-register>
+</section>

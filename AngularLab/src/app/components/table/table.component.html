@@ -11,12 +11,12 @@
         </tr>
     </thead><br>
     <tbody class="table__body body">
-        <tr class="table__data">
+        <tr class="table__data" *ngFor="let persona of personas">
             <th class="table__data__cell"><img src="../../../assets/user.png" alt="FotoUser" class="imgUser"></th>
-            <th class="table__data__cell">Camilo</th>
-            <th class="table__data__cell">Garzon</th>
-            <th class="table__data__cell">26</th>
-            <th class="table__data__cell">123456789</th>
+            <th class="table__data__cell">{{persona.nombre}}</th>
+            <th class="table__data__cell">{{persona.apellido}}</th>
+            <th class="table__data__cell">{{persona.edad}}</th>
+            <th class="table__data__cell">{{persona.cedula}}</th>
             <th class="table__data__cell"><button>Verificar edad</button></th>
             <th class="table__data__cell"><button>Eliminar usuario</button></th>
         </tr>

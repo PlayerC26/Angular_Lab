@@ -13,6 +13,7 @@ import { RegisterUserOkComponent } from './components/register-user-ok/register-
 import { RegisterUserFailComponent } from './components/register-user-fail/register-user-fail.component';
 import { AgeMaxComponent } from './components/age-max/age-max.component';
 import { AgeMinComponent } from './components/age-min/age-min.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { AgeMinComponent } from './components/age-min/age-min.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

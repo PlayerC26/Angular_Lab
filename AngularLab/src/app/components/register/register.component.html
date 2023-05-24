@@ -1,20 +1,26 @@
-<section class="register">
+<section class="register" >
 
-    <h2 class="register__title">Registro de usuarios</h2><br>
+    <form class="formulario">
+        <h2 class="register__title">Registro de usuarios</h2><br>
     <label for="firstname">Nombre:</label><br>
-    <input type="text" name="firstname" id="nombre" class="register__inputs" placeholder="Ingrese sus nombres"
+    <input  type="text" name="firstname" #nombre class="register__inputs" placeholder="Ingrese sus nombres"
         required><br>
     <label for="lastname">Apellido:</label><br>
-    <input type="text" name="lastname" id="apellido" class="register__inputs" placeholder="Ingrese sus apellidos"
+    <input type="text"  name="lastname" #apellido class="register__inputs" placeholder="Ingrese sus apellidos"
         required><br>
     <label for="age">Edad:</label><br>
-    <input type="number" name="age" id="edad" class="register__inputs" placeholder="Ingrese su edad" max="99" min="0"
+    <input type="number"  name="age" #edad class="register__inputs" placeholder="Ingrese su edad" max="99" min="0"
         required><br>
     <label for="cc">Cédula:</label><br>
-    <input type="number" name="cc" id="cedula" class="register__inputs" placeholder="Ingrese su cédula" minlength="7"
+    <input type="number" name="cc" #cedula class="register__inputs" placeholder="Ingrese su cédula" minlength="7"
         maxlength="10" required><br>
-    <input type="submit" name="Registrar" value="Registrar Usuario" class="register__btn"><br>
-    <button type="submit" name="Cancelar" (click)="closeModal()" class="register__btn">Cancelar</button>
+    <!-- <input  type="submit" name="Registrar" value="Registrar Usuario" class="register__btn"> -->
+    <button type="submit" (click)="userRegister(nombre.value, apellido.value, edad.value, cedula.value)" (click)="closeModal()" class="register__btn">Registrar Usuario</button><br>
+    <button name="Cancelar" (click)="closeModal()" class="register__btn">Cancelar</button>
+
+    </form>
+
+    
     
 
 </section>

@@ -11,14 +11,14 @@
         </tr>
     </thead><br>
     <tbody class="table__body body">
-        <tr class="table__data" *ngFor="let persona of personas">
+        <tr class="table__data" *ngFor="let persona of personas; let i = index" id="tablaInfo">
             <th class="table__data__cell"><img src="../../../assets/user.png" alt="FotoUser" class="imgUser"></th>
             <th class="table__data__cell">{{persona.nombre}}</th>
             <th class="table__data__cell">{{persona.apellido}}</th>
             <th class="table__data__cell">{{persona.edad}}</th>
             <th class="table__data__cell">{{persona.cedula}}</th>
-            <th class="table__data__cell"><button>Verificar edad</button></th>
-            <th class="table__data__cell"><button>Eliminar usuario</button></th>
+            <th class="table__data__cell"><button (click)="onClickBoton(i)" (click)="enviarDatos()" >Verificar edad</button></th>
+            <th class="table__data__cell"><button (click)="userDelete(i)">Eliminar usuario</button></th>
         </tr>
     </tbody>
 </table>

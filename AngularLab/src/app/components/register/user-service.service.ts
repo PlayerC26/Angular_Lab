@@ -18,5 +18,9 @@ export class UserServiceService {
   getPersonas(): Persona[] {
     return this.userData;
   }
-  
+
+  deleteUser(userD: number) {
+    this.userData.splice(userD, 1);
+  }
+
 }

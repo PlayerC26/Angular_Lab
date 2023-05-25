@@ -1,5 +1,7 @@
 .table {
-    width: 100%;
+    width: 100%;   
+    overflow: auto;
+    
 
     &__header {
         color: white;
@@ -11,6 +13,7 @@
     &__cell{ 
         height: 1em;
         align-items: center;
+        margin-bottom: 5px;
     }
 
 }
@@ -23,6 +26,7 @@ button {
     border: none;
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
     border-radius: 6px;
+    margin-bottom: 5px;
 }
 
 button:hover{
@@ -35,5 +39,4 @@ button:hover{
     height: 30px;
     border-radius: 25%;
     margin-right: 1em;
-
 }

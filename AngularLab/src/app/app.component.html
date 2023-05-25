@@ -4,7 +4,7 @@
     <section class="tableH">
         <section class="tableH__container">
             <app-new-user></app-new-user>
-            <app-table class="tableH__container--table"></app-table>
+            <app-table class="tableH__container--table tablemax"></app-table>
         </section>
         <app-view-cant-users class="tableInfo"></app-view-cant-users>
 
@@ -13,5 +13,6 @@
 
     <router-outlet></router-outlet>
     <app-footer class="footer"></app-footer>
-
+    <app-age-max class="notificaciones" *ngIf="notif==true"></app-age-max>
 </section>
+

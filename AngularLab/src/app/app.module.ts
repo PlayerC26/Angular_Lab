@@ -9,10 +9,8 @@ import { TableComponent } from './components/table/table.component';
 import { NewUserComponent } from './components/new-user/new-user.component';
 import { RegisterComponent } from './components/register/register.component';
 import { ViewCantUsersComponent } from './components/view-cant-users/view-cant-users.component';
-import { RegisterUserOkComponent } from './components/register-user-ok/register-user-ok.component';
-import { RegisterUserFailComponent } from './components/register-user-fail/register-user-fail.component';
 import { AgeMaxComponent } from './components/age-max/age-max.component';
-import { AgeMinComponent } from './components/age-min/age-min.component';
+
 import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
@@ -24,10 +22,7 @@ import { ReactiveFormsModule } from '@angular/forms';
     NewUserComponent,
     RegisterComponent,
     ViewCantUsersComponent,
-    RegisterUserOkComponent,
-    RegisterUserFailComponent,
-    AgeMaxComponent,
-    AgeMinComponent
+    AgeMaxComponent
   ],
   imports: [
     BrowserModule,

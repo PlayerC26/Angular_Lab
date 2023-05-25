@@ -9,10 +9,11 @@ import { SwitchService } from './services/switch.service';
 export class AppComponent  {
   title = 'AngularLab';
 
-  constructor(private modalS: SwitchService){}
+  constructor(private modalS: SwitchService, private notificaciones: SwitchService){}
  
 
   swithModal: boolean = false;
+  notif: boolean = false;
 
   openModal(){
 
@@ -26,6 +27,7 @@ export class AppComponent  {
   ngOnInit(){
     
     this.modalS.$modal.subscribe((valor)=> this.swithModal=valor);
+    this.notificaciones.$noti.subscribe((valor)=> this.notif=valor);
     
   }
     
